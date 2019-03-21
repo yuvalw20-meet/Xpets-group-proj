@@ -1,59 +1,43 @@
-#header {
-	position: fixed;
-	/*background-color: #9CAAC6;*/
-	/*background-color: #CE0000;*/
-	background-color: #000063;
-	/*background-color: #5A79A5;*/
-	/*background-color: #DEE7EF;*/
-	height: 4em;
-	color: white;
-	width: 100%;
+.header {
+	padding: 2em;
+	background-color: #9CAAC6;
+	text-align: center;
+	color: #EEF8FF;
+	font-size: 2em;
+	background-image: url(http://eskipaper.com/images/dog-background-hd-1.jpg);
+	background-position: 0% 20%;
+	background-blend-mode: overlay;
+	-webkit-transition: background-color 0.5s;
 }
 
-#Logo {
-
+h1 {
+	font-size: 2em;
+	color: #ffffff;
+	filter: blur(0.3px);
+	text-align: left;
+	text-shadow: 0px 0px 0px white;
+	-webkit-transition: text-shadow 1s, font-size 0.5s;
 }
 
-body {
+h1:hover {
+	font-size: 2.1em;
+	text-shadow: 0px 0px 10px white;
+	-webkit-transition: text-shadow 1s, font-size 1s;
+}
+
+p {
+	position: relative;
+	display: block;
+	text-align: left;
+}
+
+.header:hover {
+	background-color: #808080;
+	-webkit-transition: background-color 1s;
+}
+
 	/*background-color: #9CAAC6;*/
 	/*background-color: #CE0000;*/
 	/*background-color: #000063;*/
 	/*background-color: #5A79A5;*/
 	/*background-color: #DEE7EF;*/
-}
-
-#imgrow {
-	width: 20em;
-}
-
-#imgF {
-	position: relative;
-	float: right;
-}
-
-#Profile {
-	position: relative;
-	top: 4em;
-	display: block;
-	border: 2px solid black;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 50%;
-  	padding: 10px;
-}
-
-#pfp {
-	border-width: 5px;
-	border-style: groove;
-	border-radius: 100%;
-	width: 10em;
-	box-shadow: 5px 5px 10px gray;
-	margin-left: 1.5em;
-}
-
-.img-cntnr {
-	border: 2px solid black;
-	height: 20em;
-	width: 60.3em;
-	margin-left: 1.5em;
-}
