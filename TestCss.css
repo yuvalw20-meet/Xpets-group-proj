@@ -79,19 +79,24 @@ p {
 
 
 #center-NB {
+	position: relative;
 	text-align: center;
 	margin: auto;
 	width: 25%;
 	border-left: 1px solid #000063;
 	padding: 1em;
 	height: 100%;
+	background-color: #000063;
 	font-size: 1.5em;
-	-webkit-transition: background-color 0.5s;
+	color: white;
+	-webkit-transition: color 0.5s, font-size 0.5s, padding-top 2s;
 }
 
 #center-NB:hover {
-	background-color: #0000CA;
-	-webkit-transition: background-color 0.5s;
+	color: #9CAAC6;
+	font-size: 2em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
 }
 
 #right-NB {
@@ -140,6 +145,22 @@ p {
 	opacity: 0;
 }
 
+.Intro {
+	position: relative;
+	display: inline-block;
+}
+
+#crew-text {
+	float: left;
+	font-size: 1.3em;
+}
+
+#crew-image {
+	position: relative;
+	top: -125px;
+	float: right;
+	right: -10em;
+}
 
 	/*background-color: #9CAAC6;*/
 	/*background-color: #CE0000;*/
