@@ -43,6 +43,11 @@ $( document ).ready(function() {
 		$(".drop-down-bar").animate({height: "0em"}, {duration: 500 ,queue: false, easing: "easeInBack"});
 	});
 
+	$("#right-NB").click(function() {
+		$(".drop-down-bar").animate({height: "16em"});
+		// $(".drop-down-bar").animate({height: "toggle"});
+	});
+
 	// $(".drop-down-bar").hover(function() {
 	// 	$(".drop-down-bar").animate({height: "16em"}, {duration: 600 ,queue: false, easing: "easeOutBack"});
 	// }, function() {

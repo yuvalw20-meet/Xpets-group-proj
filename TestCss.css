@@ -11,7 +11,7 @@
 	-webkit-transition: background-color 0.5s;
 }
 
-h1 {
+#h1 {
 	position: absolute;
 	z-index: 1;
 	top: 1em;
@@ -23,7 +23,7 @@ h1 {
 	-webkit-transition: text-shadow 1s, font-size 0.5s;
 }
 
-h1:hover {
+#h1:hover {
 	font-size: 2em;
 	text-shadow: 0px 0px 10px white;
 	-webkit-transition: text-shadow 1s, font-size 1s;
@@ -55,6 +55,7 @@ p {
 	position: -webkit-sticky;
 	height: 5em;
 	top: 0;
+	z-index: 2;
 }
 
 .nav-bar h2 {
@@ -75,6 +76,7 @@ p {
 	height: 100%;
 	text-shadow: 0px 0px 5px black;
 	font-size: 1.5em;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
 }
 
 
@@ -94,7 +96,14 @@ p {
 
 #center-NB:hover {
 	color: #9CAAC6;
-	font-size: 2em;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+#left-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
 	padding-top: 20px;
 	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
 }
@@ -148,18 +157,61 @@ p {
 .Intro {
 	position: relative;
 	display: inline-block;
+	width: 100%;
 }
 
 #crew-text {
 	float: left;
 	font-size: 1.3em;
+	margin-right: 14em;
+	margin-left: 4em;
+}
+
+#crew-text-h1 {
+	margin-left: 1em;
 }
 
 #crew-image {
-	position: relative;
-	top: -125px;
+	position: absolute;
+	top: -50px;
 	float: right;
-	right: -10em;
+	right: 0em;
+}
+
+
+.happy-dog {
+	background-image: url("https://i.imgur.com/i03zTAS.jpg");
+	position: relative;
+	width:100%;
+	height: 47em;
+	background-size: cover;
+	background-position: 50% 45%;
+	top: -20px;
+	z-index: -1;
+	text-align: center;
+	padding-left: 50%;
+}
+
+#eg1-h1, #eg1-p {
+	-webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: black;
+	text-align: center;
+	color: #EFEFEF;
+	position: absolute;
+	text-shadow: 2px 2px 6px black;
+	font-size: 2em;
+
+}
+
+#eg1-h1 {
+	font-size: 5em;	
+	margin-left: 15%;
+	margin-right: 12%;
+	top: 1%;
+}
+
+#eg1-p {
+	top: 30%;
 }
 
 	/*background-color: #9CAAC6;*/
