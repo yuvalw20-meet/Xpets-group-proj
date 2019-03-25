@@ -41,3 +41,9 @@ And these put them in the bottom of the body:
 
 	<!-- Js Link -->
 	<script src="TestJs.js"></script>
+
+put this in your CSS:
+	body {
+    font-family: "DejaVu Sans Light";
+}
+It's a really nice font and fits well ;-)
