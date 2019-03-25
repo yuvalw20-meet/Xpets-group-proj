@@ -115,13 +115,16 @@ body {
     text-align: left;
 }
 #profile-followbar {
+    position: absolute;
     top: 22%;
-    left: 22%;
-    width:22em;
-    heigt: 2.2em;
-    font-size: 2em;
-    font-weight: bold;
+    left: 42%;
+    width:30%;
+    height: 1.5em;
+    font-size: 1.3em;
+    font-weight: bolder;
     text-align: center;
+    color: white;
+    background-color:#CE0000 ;
 }
 
 /*Color Pallete:*/
