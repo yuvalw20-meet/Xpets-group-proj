@@ -1,5 +1,5 @@
 body {
-    font-family: "DejaVu Sans Light";
+    font-family: 'Rubik', sans-serif;
 }
 .nav-bar {
     overflow: hidden;
@@ -86,8 +86,11 @@ body {
     position: absolute;
     top: 100px;
     left: 30%;
-    border: #9CAAC6 3px solid;
+    border: #000063 3px solid;
     text-align: center;
+}
+.blueFont {
+    color: #000063;
 }
 #profile-pic {
     position: absolute;
@@ -95,7 +98,7 @@ body {
     left: 8%;
     width: 5em;
     height: 5em;
-    border: #9CAAC6 0.2em solid;
+    border: #000063 0.2em solid;
     border-radius: 50%;
 }
 #profile-name {
@@ -116,15 +119,45 @@ body {
 }
 #profile-followbar {
     position: absolute;
-    top: 22%;
+    top: 17%;
     left: 42%;
-    width:30%;
-    height: 1.5em;
-    font-size: 1.3em;
+    width:33%;
+    font-size: 1.5em;
     font-weight: bolder;
     text-align: center;
+    vertical-align: middle;
     color: white;
     background-color:#CE0000 ;
+    border-radius: 0.59em;
+}
+#profile-posts {
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    width:11%;
+    text-align: center;
+}
+#profile-followers {
+    position: absolute;
+    top: 8%;
+    left: 49.5%;
+    width:18%;
+    text-align: center;
+}
+#profile-petXPoints {
+    position: absolute;
+    top: 8%;
+    left: 76%;
+    width:11%;
+    text-align: center;
+}
+
+.lowerP-section {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color:#DEE7EF ;
 }
 
 /*Color Pallete:*/
