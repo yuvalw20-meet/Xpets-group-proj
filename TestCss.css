@@ -1,4 +1,4 @@
-.header {
+.header { /* This is for the header */
 	padding: 2em;
 	background-color: #9CAAC6;
 	text-align: center;
@@ -10,7 +10,7 @@
 	background-blend-mode: overlay;
 	-webkit-transition: background-color 0.5s;
 }
-
+/* */
 #h1 {
 	position: absolute;
 	z-index: 1;
@@ -40,13 +40,15 @@ p {
 	-webkit-transition: background-color 1s;
 }
 
-#pop {
+#pop { /* Little Meetx Easter Egg*/
 	position: absolute;
 	top: 3.45em;
 	z-index: 0;
 	opacity: 0;
 	left: 4em;
 }
+
+/* ----------------------NAVIGATION BAR---------------------- */
 
 .nav-bar {
 	overflow: hidden;
@@ -67,24 +69,37 @@ p {
 	text-decoration: none;
 }
 
+/* -----------Navigation bar buttons----------- */
+
+/* -----LEFT BUTTON----- */
+
 #left-NB {
 	text-align: center;
 	margin: auto;
 	width: 15%;
 	border-right: 1px solid #000063;
 	padding: 1em;
+	background-color:#9CAAC6;
 	height: 100%;
 	text-shadow: 0px 0px 5px black;
 	font-size: 1.5em;
 	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
 }
 
+#left-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----MIDDLE BUTTON----- */
 
 #center-NB {
 	position: relative;
 	text-align: center;
 	margin: auto;
-	width: 25%;
+	width: 18.99%;
 	border-left: 1px solid #000063;
 	padding: 1em;
 	height: 100%;
@@ -101,28 +116,25 @@ p {
 	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
 }
 
-#left-NB:hover {
-	color: #9CAAC6;
-	font-size: 1.9em;
-	padding-top: 20px;
-	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
-}
+/* -----RIGHT BUTTON----- */
 
 #right-NB {
 	position: relative;
 	margin: auto;
-	width: 15%;
+	/*width: 15%;*/
 	/*border: 3px solid #5A9A5;*/
 	padding: 0em;
 	height: 100%;
 	float: right;
-	right: -3.8%;
+	padding-right: 1.25em;
 	background-color: #000063;
 	box-shadow: inset 0px 0px 20px #000063;
 	text-align: right;
 }
 
-#top-hr, #center-hr, #bot-hr {
+/* This is the making of the three lines for the drop down menu*/
+
+#top-hr, #center-hr, #bot-hr { 
 	position: relative;
 	width: 2em;
 	/*height: 1em;*/
@@ -141,50 +153,41 @@ p {
 
 .drop-down-bar {
 	overflow: hidden;
-	background-color: #000063;
 	position: sticky;
 	position: -webkit-sticky;
-	height: auto;
-	top: 5em;
+	height: 12em;
 	float: right;
+	top: 5em;
 	background-color: #DEE7EF;
+	width: 10em;
 	text-align: center;
 	padding: 6px;
 	z-index: 0;
 	opacity: 0;
+	list-style: none;
 }
 
-.Intro {
+.drop-down-bar li {
+	font-size: 1.4em;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	background-color: #DEE7EF;
 	position: relative;
-	display: inline-block;
-	width: 100%;
-	perspective: 1px;
-	height: 50vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	background-color: red;
+	top: -3%;
+	width: 110%;
+	left: -5%;
+	vertical-align: middle;
+	color: black;
+	-webkit-transition: background-color 0.2s, color 0.2s;
 }
 
-#crew-text {
-	float: left;
-	font-size: 1.6em;
-	margin-right: 14em;
-	margin-left: 4em;
+.drop-down-bar li:hover {
+	color: white;
+	background-color: #000063;
+	-webkit-transition: background-color 0.2s, color 0.2s;
 }
 
-#crew-text-h1 {
-	font-size: 2.6em;
-	margin-left: 1em;
-}
-
-#crew-image {
-	position: absolute;
-	top: -50px;
-	float: right;
-	right: 0em;
-	top: 10%;
-}
-
+/* ----------------------BODY START, INTRO---------------------- */
 
 .happy-dog {
 	background-image: url("https://i.imgur.com/i03zTAS.jpg");
@@ -197,6 +200,11 @@ p {
 	z-index: -1;
 	text-align: center;
 	padding-left: 50%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline: 2px solid #000063;
 }
 
 #eg1-h1, #eg1-p {
@@ -221,9 +229,49 @@ p {
 	top: 30%;
 }
 
+.Intro {
+	/*text-align: center;*/
+	position: relative;
+	top: -1.3em;
+	padding: 0.2em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	width: 60%;
+	height: 25em;
+	background-image: url(crew.png);
+	background-attachment: fixed;
+	background-position: 75% 50%;
+	background-repeat: no-repeat;
+	/*background-color: #634d43;*/
+}
+
+#crew-text {
+	display: inline-block;
+	position: absolute;
+	float: left;
+	font-size: 1.6em;
+	margin-right: 14em;
+	/*margin-left: 4em;*/
+}
+
+#crew-text-h1 {
+	font-size: 2.6em;
+	/*margin-left: 1em;*/
+}
 
 
+body {
+    font-family: 'Rubik', sans-serif;
+}
 
+
+/* ----------------------EXTRAS---------------------- */
+
+.selected {
+
+}
 
 	/*background-color: #9CAAC6;*/
 	/*background-color: #CE0000;*/
