@@ -12,17 +12,11 @@ $( document ).ready(function() {
 	$(".drop-down-bar").css({height: "0em"});
 
 	$("#center-NB").click(function() {
-		$( document ).ready(function() {
-			window.open("LoginSU.html","_self");
-		});
-		// ChngToLSU();
+		window.open("LoginSU.html","_self");
 	});
 
 	$("#left-NB").click(function() {
-		$( document ).ready(function() {
-			window.open("TestPage.html","_self");
-		});
-		// ChngToLSU();
+		window.open("TestPage.html","_self");
 	});
 	
 	$("#h1").hover(function(){
@@ -44,7 +38,7 @@ $( document ).ready(function() {
 	$("#right-NB").click(function() {
 		if(isddmdown == false){
 			isddmdown = true;
-			$(".drop-down-bar").animate({height: "18em"}, {duration: 600 ,queue: false, easing: "easeOutBack"});
+			$(".drop-down-bar").animate({height: "17em"}, {duration: 600 ,queue: false, easing: "easeOutBack"});
 			$(".drop-down-bar").animate({opacity: "1"}, {duration: 400 ,queue: false});
 		}
 		else{
@@ -52,6 +46,12 @@ $( document ).ready(function() {
 			$(".drop-down-bar").animate({height: "0em"}, {duration: 600 ,queue: false, easing: "easeInBack"});
 			$(".drop-down-bar").animate({opacity: "0"}, {duration: 650 ,queue: false, easing: "easeInQuint"});
 		}
+	});
+
+	$("#ContactUsLink").click(function() {
+		$( document ).ready(function() {
+			window.open("ContactUsPage.html","_self");
+		});
 	});
 
 });

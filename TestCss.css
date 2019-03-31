@@ -8,6 +8,7 @@
 	background-image: url(http://eskipaper.com/images/dog-background-hd-1.jpg);
 	background-position: 0% 20%;
 	background-blend-mode: overlay;
+	z-index: 2;
 	-webkit-transition: background-color 0.5s;
 }
 /* */
@@ -58,6 +59,7 @@ p {
 	height: 5em;
 	top: 0;
 	z-index: 2;
+	box-shadow: 0px 0px 10px black;
 }
 
 .nav-bar h2 {
@@ -198,18 +200,22 @@ p {
 	background-position: 50% 45%;
 	top: -20px;
 	z-index: -1;
-	text-align: center;
-	padding-left: 50%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	
 	outline: 2px solid #000063;
 }
 
+.eg-text {
+	position: relative;
+	background-color: rgba(0,0,0,0.4);
+	margin-left: 58%;
+	height: 100%;
+	text-align: center;
+	width: 25%;
+}
+
 #eg1-h1, #eg1-p {
-	-webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color: black;
+	/*-webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: black;*/
 	text-align: center;
 	color: #EFEFEF;
 	position: absolute;
@@ -219,14 +225,15 @@ p {
 }
 
 #eg1-h1 {
-	font-size: 5em;	
-	margin-left: 15%;
-	margin-right: 12%;
-	top: 1%;
+	font-size: 5em;
+	padding-left: 9%;
+	padding-right: 9%;
 }
 
 #eg1-p {
-	top: 30%;
+	top: 20%;
+	padding-left: 9%;
+	padding-right: 9%;
 }
 
 .Intro {
@@ -241,8 +248,8 @@ p {
 	width: 60%;
 	height: 25em;
 	background-image: url(crew.png);
-	background-attachment: fixed;
-	background-position: 75% 50%;
+	/*background-attachment: fixed;*/
+	background-position: 90% 50%;
 	background-repeat: no-repeat;
 	/*background-color: #634d43;*/
 }
