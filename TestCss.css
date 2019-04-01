@@ -164,7 +164,7 @@ p {
 	width: 10em;
 	text-align: center;
 	padding: 6px;
-	z-index: 0;
+	z-index: 99;
 	opacity: 0;
 	list-style: none;
 }
@@ -205,7 +205,7 @@ p {
 }
 
 .eg-text {
-	position: relative;
+	position: absolute;
 	background-color: rgba(0,0,0,0.4);
 	margin-left: 58%;
 	height: 100%;
@@ -225,13 +225,16 @@ p {
 }
 
 #eg1-h1 {
+	position: absolute;
 	font-size: 5em;
 	padding-left: 9%;
 	padding-right: 9%;
 }
 
 #eg1-p {
-	top: 20%;
+	position: relative;
+	top: 50%;
+	margin-top: 40%;
 	padding-left: 9%;
 	padding-right: 9%;
 }
@@ -249,7 +252,7 @@ p {
 	height: 25em;
 	background-image: url(crew.png);
 	/*background-attachment: fixed;*/
-	background-position: 90% 50%;
+	background-position: 100% 50%;
 	background-repeat: no-repeat;
 	/*background-color: #634d43;*/
 }
@@ -273,7 +276,257 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+/* ----------------------SIGN UP PAGE---------------------- */
 
+.S-up {
+	position: absolute;
+	margin-top: 6%;
+	left: 5%;
+	width: 30%;
+	height: 80%;
+	/*border: 2px solid black;*/
+	box-shadow: 0px 0px 10px black;
+	border-radius: .8%;
+	background-color: #DEE7EF;
+	text-align: center;
+}
+
+.S-in {
+	position: absolute;
+	margin-top: 6%;
+	margin-right: 5%;
+	width: 30%;
+	height: 80%;
+	text-align: center;	
+	box-shadow: 0px 0px 10px black;
+	border-radius: .8%;
+	right: 2.5%;
+	background-color: #DEE7EF;
+}
+
+.S-up, .S-in {
+	color: #DEE7EF;
+
+	text-shadow: 0px 0px 10px black;
+
+	opacity: 0.5;
+
+	-webkit-transition: opacity 0.4s, color 0.4s, text-shadow 0.4s;
+}
+
+.S-up:hover, .S-in:hover {
+	color: black;
+
+	text-shadow: 0px 0px 10px #DEE7EF;
+
+	opacity: 1;
+
+	-webkit-transition: opacity 0.8s, color 0.8s, text-shadow 0.8s;	
+}
+
+.S-ui-cont {
+	position: absolute;
+	text-align: center;
+	/*perspective: 40px;*/
+	width: 100%;
+	height: 92.7%;
+}
+
+.bg-img {
+	position: absolute;
+	height: 92.7%;
+	width: 100%;
+
+	/*-webkit-filter: blur(0px);*/
+
+	/*z-index: 100;*/
+
+	background-image: url(http://yesofcorsa.com/wp-content/uploads/2017/01/4K-Cat-Photo.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	background-color: #5A79A5;
+	background-size: 100%;
+
+	/*-webkit-transition: filter 0.4s;*/
+}
+
+.bg-img:hover {
+	/*-webkit-filter: blur(3px);*/
+	/*-webkit-transition: filter 0.8s;*/
+}
+
+
+
+/* ----------------------REG/SIGN_UP---------------------- */
+
+.S-ui-cont h1 {
+	font-size: 4.25em;
+}
+
+#password, #email {
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	height: 8%;
+}
+
+#password {
+	margin-top: 20%;
+}
+
+#email {
+	margin-top: 5%;	
+}
+
+#names {
+	top: 41%;
+	position: absolute;
+	width: 100%;
+	height: 8%;
+}
+
+#fname, #lname {
+	position: absolute;
+	vertical-align: middle;
+	/*margin-left: 25%;*/
+	/*margin-right:25%;*/
+	width: 40%;
+	top: 0;
+	height: 100%;
+	left: 5%;
+}
+
+#fname {
+	margin-right: 50%;
+}
+
+#lname {
+	margin-left: 50%;
+}
+
+#bday {
+	position: absolute;
+	top: 52%;
+	left: 15%;
+	width: 70%;
+	height: 8%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#sex1, #sex2 {
+	position: absolute;
+	top: 63%;
+	font-size: 1.6em;
+	left: -6.5%;
+	text-align: center;
+}
+
+#sex1 {
+	margin-left: 25%;
+}
+
+#sex2 {
+	margin-left: 72.5%;
+}
+
+#S-up-btn {
+	position: absolute;
+	font-size: 3em;
+	margin-top: 74%;
+	background-color: white;
+	margin-left: 32.5%;
+	width: 35%;
+	border-radius: 0.2em;
+	box-shadow: 0px 0px 10px #9CAAC6;
+	-webkit-transition: box-shadow 0.3s, font-size 0.3s, width 0.3s, margin-left 0.3s, margin-top 0.3s, color 0.3s, background-color 0.3s;
+}
+
+
+#S-up-btn:hover {
+	margin-top: 72.2%;
+	width: 40%;
+	font-size: 4em;
+	margin-left: 30%;
+	box-shadow: 0px 0px 20px black;
+	text-shadow: 0px 0px 2px #DEE7EF;
+	color: #DEE7EF;
+	background-color: #5A79A5;
+	-webkit-transition: box-shadow 0.6s, font-size 0.6s, width 0.6s, margin-left 0.6s, margin-top 0.6s, color 0.6s, background-color 0.3s;
+}
+
+#helper {
+	position: absolute;
+	width: 100%;
+	margin-top: 33.3%; /*Was 79% for Sign Up box only*/
+	height: 2px;
+	z-index: 100000;
+}
+
+#helper2 {
+	position: absolute;
+	width: 2px;
+	top: -2.9%;
+	height: 100%;
+	margin-left: 32.5%;
+}
+
+#helper3 {
+	position: absolute;
+	width: 2px;
+	top: -2.9%;
+	height: 100%;
+	margin-left: 67.6%;
+}
+
+/* ----------------------Sign In---------------------- */
+
+#owl {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	margin-top: 64%;
+	left: 0;
+	margin-left: 25%;
+	margin-right: 25%;
+	z-index: 0;
+}
+
+#S-in-btn {
+	position: absolute;
+	font-size: 3em;
+	margin-top: 74%;
+	background-color: white;
+	margin-left: 22.5%;
+	width: 55%;
+	border-radius: 0.2em;
+	box-shadow: 0px 0px 10px #9CAAC6;
+	z-index: 2;
+	-webkit-transition: box-shadow 0.3s, font-size 0.3s, width 0.3s, margin-left 0.3s, margin-top 0.3s, color 0.3s, background-color 0.3s;
+}
+
+
+#S-in-btn:hover {
+	margin-top: 72.2%;
+	width: 60%;
+	font-size: 4em;
+	margin-left: 20%;
+	box-shadow: 0px 0px 20px black;
+	text-shadow: 0px 0px 2px #DEE7EF;
+	color: #DEE7EF;
+	background-color: #5A79A5;
+	-webkit-transition: box-shadow 0.6s, font-size 0.6s, width 0.6s, margin-left 0.6s, margin-top 0.6s, color 0.6s, background-color 0.3s;
+}
+
+#curtain {
+	position: absolute;
+	margin-top: 85%;
+	margin-left: 25%;
+	background-color: #DEE7EF;
+	width: 50%;
+	height: 18%;
+	z-index: 1;
+}
 /* ----------------------EXTRAS---------------------- */
 
 .selected {

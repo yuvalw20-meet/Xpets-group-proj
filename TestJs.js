@@ -10,15 +10,27 @@ $( document ).ready(function() {
 
 	//SETTING DEFAULTS FOR WEBSITE
 	$(".drop-down-bar").css({height: "0em"});
+	$("#owl").css({opacity: "0"});
 
+
+
+	//Opening Browsers
 	$("#center-NB").click(function() {
 		window.open("LoginSU.html","_self");
 	});
-
+	
 	$("#left-NB").click(function() {
 		window.open("TestPage.html","_self");
 	});
-	
+
+	$("#ContactUsLink").click(function() {
+		$( document ).ready(function() {
+			window.open("ContactUsPage.html","_self");
+		});
+	});
+
+
+	//Hover effect in Main Page for H1 (xPet)
 	$("#h1").hover(function(){
 		$("#pop").animate({opacity: "1"}, {duration: 600 ,queue: false});
 		$("#pop").animate({left: "7.4em"}, {duration: 1000 ,queue: false, easing: "easeOutBounce"});
@@ -48,10 +60,19 @@ $( document ).ready(function() {
 		}
 	});
 
-	$("#ContactUsLink").click(function() {
-		$( document ).ready(function() {
-			window.open("ContactUsPage.html","_self");
-		});
+	// alert($("#S-up-btn").width());
+
+	$("#S-up-btn").click(function() {
+		alert("We're sorry, this feature has not yet been implemented. :(");
+	});
+
+	$("#S-in-btn").hover(function() {
+		$("#owl").animate({top: "0%"}, {duration: 600 ,queue: false, easing: "easeOutBack"});
+		$("#owl").animate({opacity: "1"}, {duration: 600 ,queue: false, easing: "easeOutQuint"});
+		}, function() {
+		$("#owl").animate({top: "20%"}, {duration: 350 ,queue: false, easing: "easeInBack"});
+		$("#owl").animate({opacity: "0"}, {duration: 500 ,queue: false, easing: "easeInQuint"});
+
 	});
 
 });
