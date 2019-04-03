@@ -31,6 +31,10 @@ $( document ).ready(function() {
 		window.open("Categories.html","_self");
 	});
 
+	$("#AboutLink").click(function() {
+		window.open("AboutPage.html","_self");
+	});
+
 
 	//Hover effect in Main Page for H1 (xPet)
 	$("#h1").hover(function(){
@@ -72,8 +76,8 @@ $( document ).ready(function() {
 		$("#owl").animate({top: "0%"}, {duration: 600 ,queue: false, easing: "easeOutBack"});
 		$("#owl").animate({opacity: "1"}, {duration: 600 ,queue: false, easing: "easeOutQuint"});
 		}, function() {
-		$("#owl").animate({top: "20%"}, {duration: 350 ,queue: false, easing: "easeInBack"});
-		$("#owl").animate({opacity: "0"}, {duration: 500 ,queue: false, easing: "easeInQuint"});
+		$("#owl").animate({top: "19%"}, {duration: 350 ,queue: false, easing: "easeInBack"});
+		$("#owl").animate({opacity: "0"}, {duration: 350 ,queue: false, easing: "easeInQuint"});
 
 	});
 
