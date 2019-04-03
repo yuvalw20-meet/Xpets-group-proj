@@ -1,0 +1,290 @@
+
+/* ----------------------NAVIGATION BAR---------------------- */
+
+.nav-bar {
+	overflow: hidden;
+	background-color: #000063;
+	position: relative;
+	height: 5em;
+	top: -0.82vh;
+	width: 100.9%;
+	z-index: 2;
+	left: -0.99vh;
+	box-shadow: 0px 0px 10px black;
+}
+
+.nav-bar h2 {
+	float: left;
+	display: block;
+	color: white;
+	/*text-align: center;*/
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+/* -----------Navigation bar buttons----------- */
+
+/* -----LEFT BUTTON----- */
+
+#left-NB {
+	text-align: center;
+	margin: auto;
+	width: 15%;
+	border-right: 1px solid #000063;
+	padding: 1em;
+	background-color:#9CAAC6;
+	height: 100%;
+	text-shadow: 0px 0px 5px black;
+	font-size: 1.5em;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+#left-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----MIDDLE BUTTON----- */
+
+#center-NB {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 18.99%;
+	border-left: 1px solid #000063;
+	padding: 1em;
+	height: 100%;
+	background-color: #000063;
+	font-size: 1.5em;
+	color: white;
+	-webkit-transition: color 0.5s, font-size 0.5s, padding-top 2s;
+}
+
+#center-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----RIGHT BUTTON----- */
+
+#right-NB {
+	position: relative;
+	margin: auto;
+	/*width: 15%;*/
+	/*border: 3px solid #5A9A5;*/
+	padding-top: 0.25em;
+	height: 100%;
+	float: right;
+	padding-right: 2.25em;
+	background-color: #000063;
+	box-shadow: inset 0px 0px 20px #000063;
+	text-align: right;
+}
+
+/* This is the making of the three lines for the drop down menu*/
+
+#top-hr, #center-hr, #bot-hr { 
+	position: relative;
+	width: 2em;
+	/*height: 1em;*/
+	vertical-align: middle;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+#top-hr {
+	top: 0.25em;
+}
+
+#center-hr {
+	top: 0.5em;
+}
+
+#bot-hr {
+	top: -0.75em;
+}
+
+/* ----------------Drop Down Menu---------------- */
+
+.drop-down-bar {
+	display: inline-block;
+	position: absolute;
+	height: 12em;
+	right: 0;
+	float: right;
+	top: 3em;
+	background-color: #DEE7EF;
+	width: 10em;
+	text-align: center;
+	padding: 6px;
+	z-index: 99;
+	opacity: 0;
+	list-style: none;
+}
+
+.drop-down-bar li {
+	position: relative;
+	font-size: 1.4em;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	/*background-color: #DEE7EF;*/
+	top: -3%;
+	width: 110%;
+	left: -5%;
+	vertical-align: middle;
+	color: black;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+.drop-down-bar li:hover {
+	color: white;
+	background-color: #000063;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ----------------------M P P---------------------- */
+
+.MPP, .Rec-Ado {
+	position: absolute;
+	-webkit-transform: translate(-50%, 0);
+  	left: 50%;
+  	width: 100%;
+  	height: 40%;
+  	background-color: black;
+  	/*box-shadow: 0px 0px 10px gray;*/
+}
+
+.MPP {
+	top: 10em;
+}
+
+.Rec-Ado {
+	top: 35em;
+}
+
+.title, .Rtitle {
+	position: absolute;
+	-webkit-transform: translate(-50%, 0);
+	left: 50%;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	z-index: 1;
+	width: 100%;
+	top: 1%;
+	height: 2.7em;
+	text-shadow: 0px 0px 8px black;
+	/*padding-top: 1em;*/
+}
+
+
+.slot1, .slot2, .slot3, .slot4, .slot5, .Rslot1, .Rslot2, .Rslot3, .Rslot4, .Rslot5 {
+	position: relative;
+	display: inline-block;
+	margin-top: 3.11em;
+	width:19.81326%;
+	height: 86.8%;
+	background-color: blue;
+	box-shadow: 0px 0px 10px gray;
+}
+
+.slot1 {
+	background-image: url(https://vetstreet.brightspotcdn.com/dims4/default/4c1fd66/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Ffd%2Fc6caa0a81811e0a0d50050568d634f%2Ffile%2Fsamoyed-1-645mk070111.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.slot2 {
+	background-image: url(http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-3.jpg);
+	background-repeat: no-repeat;
+	background-position: 40% 10%;	
+}
+
+.slot3 {
+	background-image: url(https://www.petguide.com/wp-content/uploads/2016/08/satin-rabbit-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 40% 20%;	
+}
+
+.slot4 {
+	background-image: url(https://i.redd.it/yaekdlw1qa6z.jpg);
+	background-repeat: no-repeat;
+	background-size: 140%;
+	background-position: 40% 50%;	
+}
+
+.slot5 {
+	background-image: url(https://cdn.shopify.com/s/files/1/0855/3388/products/6297_800x.jpeg?v=1441108913);
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 100% 10%;	
+}
+
+
+#p {
+	position: absolute;
+	-webkit-transform: translate(-50%, 0);
+	left: 50%;
+	color: #DEE7EF;
+	font-size: 2em;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.Rslot1 {
+	background-image: url(https://images4.alphacoders.com/712/thumb-1920-712249.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 131%;
+}
+
+.Rslot2 {
+	background-image: url(https://images4.alphacoders.com/592/thumb-1920-592456.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% -0%;
+	background-size: 125%;
+}
+
+.Rslot3 {
+	background-image: url(http://chandra.as.utexas.edu/canarybirds/AfricanBlueTit-7D3538w.jpg);
+	background-repeat: no-repeat;
+	background-position: 60% 20%;
+	background-size: 130%;
+}
+
+.Rslot4 {
+	background-image: url(https://images7.alphacoders.com/728/thumb-1920-728349.jpg);
+	background-repeat: no-repeat;
+	background-size: 140%;
+	background-position: 40% 50%;	
+}
+
+.Rslot5 {
+	background-image: url(https://images.alphacoders.com/460/thumb-1920-460101.jpg);
+	background-repeat: no-repeat;
+	background-size: 140%;
+	background-position: 50% 50%;	
+}
+
+/* ----------------------EXTRAS---------------------- */
+
+.selected {
+
+}
+
+	/*background-color: #9CAAC6;*/
+	/*background-color: #CE0000;*/
+	/*background-color: #000063;*/
+	/*background-color: #5A79A5;*/
+	/*background-color: #DEE7EF;*/
