@@ -24,9 +24,11 @@ $( document ).ready(function() {
 	});
 
 	$("#ContactUsLink").click(function() {
-		$( document ).ready(function() {
-			window.open("ContactUsPage.html","_self");
-		});
+		window.open("ContactUsPage.html","_self");
+	});
+
+	$("#CategoriesLink").click(function() {
+		window.open("Categories.html","_self");
 	});
 
 
