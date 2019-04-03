@@ -1,0 +1,540 @@
+.header { /* This is for the header */
+	padding: 2em;
+	background-color: #9CAAC6;
+	text-align: center;
+	color: #EEF8FF;
+	font-size: 2em;
+	padding-top: 5em;
+	background-image: url(http://eskipaper.com/images/dog-background-hd-1.jpg);
+	background-position: 0% 20%;
+	background-blend-mode: overlay;
+	z-index: 2;
+	-webkit-transition: background-color 0.5s;
+}
+/* */
+#h1 {
+	position: absolute;
+	z-index: 1;
+	top: 1em;
+	font-size: 2em;
+	color: #ffffff;
+	filter: blur(0.3px);
+	text-align: left;
+	text-shadow: 0px 0px 0px white;
+	-webkit-transition: text-shadow 1s, font-size 0.5s;
+}
+
+#h1:hover {
+	font-size: 2em;
+	text-shadow: 0px 0px 10px white;
+	-webkit-transition: text-shadow 1s, font-size 1s;
+}
+
+p {
+	position: relative;
+	display: block;
+	text-align: left;
+}
+
+.header:hover {
+	background-color: #808080;
+	-webkit-transition: background-color 1s;
+}
+
+#pop { /* Little Meetx Easter Egg*/
+	position: absolute;
+	top: 3.45em;
+	z-index: 0;
+	opacity: 0;
+	left: 4em;
+}
+
+/* ----------------------NAVIGATION BAR---------------------- */
+
+.nav-bar {
+	overflow: hidden;
+	background-color: #000063;
+	position: sticky;
+	position: -webkit-sticky;
+	height: 5em;
+	top: 0;
+	z-index: 2;
+	box-shadow: 0px 0px 10px black;
+}
+
+.nav-bar h2 {
+	float: left;
+	display: block;
+	color: white;
+	/*text-align: center;*/
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+/* -----------Navigation bar buttons----------- */
+
+/* -----LEFT BUTTON----- */
+
+#left-NB {
+	text-align: center;
+	margin: auto;
+	width: 15%;
+	border-right: 1px solid #000063;
+	padding: 1em;
+	background-color:#9CAAC6;
+	height: 100%;
+	text-shadow: 0px 0px 5px black;
+	font-size: 1.5em;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+#left-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----MIDDLE BUTTON----- */
+
+#center-NB {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 18.99%;
+	border-left: 1px solid #000063;
+	padding: 1em;
+	height: 100%;
+	background-color: #000063;
+	font-size: 1.5em;
+	color: white;
+	-webkit-transition: color 0.5s, font-size 0.5s, padding-top 2s;
+}
+
+#center-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----RIGHT BUTTON----- */
+
+#right-NB {
+	position: relative;
+	margin: auto;
+	/*width: 15%;*/
+	/*border: 3px solid #5A9A5;*/
+	padding: 0em;
+	height: 100%;
+	float: right;
+	padding-right: 1.25em;
+	background-color: #000063;
+	box-shadow: inset 0px 0px 20px #000063;
+	text-align: right;
+}
+
+/* This is the making of the three lines for the drop down menu*/
+
+#top-hr, #center-hr, #bot-hr { 
+	position: relative;
+	width: 2em;
+	/*height: 1em;*/
+	top: -0.25em;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+#center-hr {
+	top: -0.5em;
+}
+
+#bot-hr {
+	top: -0.75em;
+}
+
+.drop-down-bar {
+	overflow: hidden;
+	position: sticky;
+	position: -webkit-sticky;
+	height: 12em;
+	float: right;
+	top: 5em;
+	background-color: #DEE7EF;
+	width: 10em;
+	text-align: center;
+	padding: 6px;
+	z-index: 99;
+	opacity: 0;
+	list-style: none;
+}
+
+.drop-down-bar li {
+	font-size: 1.4em;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	background-color: #DEE7EF;
+	position: relative;
+	top: -3%;
+	width: 110%;
+	left: -5%;
+	vertical-align: middle;
+	color: black;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+.drop-down-bar li:hover {
+	color: white;
+	background-color: #000063;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+/* ----------------------BODY START, INTRO---------------------- */
+
+.happy-dog {
+	background-image: url("https://i.imgur.com/i03zTAS.jpg");
+	position: relative;
+	width:100%;
+	height: 47em;
+	background-size: cover;
+	background-position: 50% 45%;
+	top: -20px;
+	z-index: -1;
+	
+	outline: 2px solid #000063;
+}
+
+.eg-text {
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	margin-left: 58%;
+	height: 100%;
+	text-align: center;
+	width: 25%;
+}
+
+#eg1-h1, #eg1-p {
+	/*-webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: black;*/
+	text-align: center;
+	color: #EFEFEF;
+	position: absolute;
+	text-shadow: 2px 2px 6px black;
+	font-size: 2em;
+
+}
+
+#eg1-h1 {
+	position: absolute;
+	font-size: 5em;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+#eg1-p {
+	position: relative;
+	top: 50%;
+	margin-top: 40%;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.Intro {
+	/*text-align: center;*/
+	position: relative;
+	top: -1.3em;
+	padding: 0.2em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	width: 60%;
+	height: 25em;
+	background-image: url(crew.png);
+	/*background-attachment: fixed;*/
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	/*background-color: #634d43;*/
+}
+
+#crew-text {
+	display: inline-block;
+	position: absolute;
+	float: left;
+	font-size: 1.6em;
+	margin-right: 14em;
+	/*margin-left: 4em;*/
+}
+
+#crew-text-h1 {
+	font-size: 2.6em;
+	/*margin-left: 1em;*/
+}
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ----------------------SIGN UP PAGE---------------------- */
+
+.S-up {
+	position: absolute;
+	margin-top: 6%;
+	left: 5%;
+	width: 30%;
+	height: 80%;
+	/*border: 2px solid black;*/
+	box-shadow: 0px 0px 10px black;
+	border-radius: .8%;
+	background-color: #DEE7EF;
+	text-align: center;
+}
+
+.S-in {
+	position: absolute;
+	margin-top: 6%;
+	margin-right: 5%;
+	width: 30%;
+	height: 80%;
+	text-align: center;	
+	box-shadow: 0px 0px 10px black;
+	border-radius: .8%;
+	right: 2.5%;
+	background-color: #DEE7EF;
+}
+
+.S-up, .S-in {
+	color: #DEE7EF;
+
+	text-shadow: 0px 0px 10px black;
+
+	opacity: 0.5;
+
+	-webkit-transition: opacity 0.4s, color 0.4s, text-shadow 0.4s;
+}
+
+.S-up:hover, .S-in:hover {
+	color: black;
+
+	text-shadow: 0px 0px 10px #DEE7EF;
+
+	opacity: 1;
+
+	-webkit-transition: opacity 0.8s, color 0.8s, text-shadow 0.8s;	
+}
+
+.S-ui-cont {
+	position: absolute;
+	text-align: center;
+	/*perspective: 40px;*/
+	width: 100%;
+	height: 92.7%;
+}
+
+.bg-img {
+	position: absolute;
+	height: 92.7%;
+	width: 100%;
+
+	/*-webkit-filter: blur(0px);*/
+
+	/*z-index: 100;*/
+
+	background-image: url(http://yesofcorsa.com/wp-content/uploads/2017/01/4K-Cat-Photo.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 40%;
+	background-color: #5A79A5;
+	background-size: 100%;
+
+	/*-webkit-transition: filter 0.4s;*/
+}
+
+.bg-img:hover {
+	/*-webkit-filter: blur(3px);*/
+	/*-webkit-transition: filter 0.8s;*/
+}
+
+
+
+/* ----------------------REG/SIGN_UP---------------------- */
+
+.S-ui-cont h1 {
+	font-size: 4.25em;
+}
+
+#password, #email {
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	height: 8%;
+}
+
+#password {
+	margin-top: 20%;
+}
+
+#email {
+	margin-top: 5%;	
+}
+
+#names {
+	top: 41%;
+	position: absolute;
+	width: 100%;
+	height: 8%;
+}
+
+#fname, #lname {
+	position: absolute;
+	vertical-align: middle;
+	/*margin-left: 25%;*/
+	/*margin-right:25%;*/
+	width: 40%;
+	top: 0;
+	height: 100%;
+	left: 5%;
+}
+
+#fname {
+	margin-right: 50%;
+}
+
+#lname {
+	margin-left: 50%;
+}
+
+#bday {
+	position: absolute;
+	top: 52%;
+	left: 15%;
+	width: 70%;
+	height: 8%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#sex1, #sex2 {
+	position: absolute;
+	top: 63%;
+	font-size: 1.6em;
+	left: -6.5%;
+	text-align: center;
+}
+
+#sex1 {
+	margin-left: 25%;
+}
+
+#sex2 {
+	margin-left: 72.5%;
+}
+
+#S-up-btn {
+	position: absolute;
+	font-size: 3em;
+	margin-top: 74%;
+	background-color: white;
+	margin-left: 32.5%;
+	width: 35%;
+	border-radius: 0.2em;
+	box-shadow: 0px 0px 10px #9CAAC6;
+	-webkit-transition: box-shadow 0.3s, font-size 0.3s, width 0.3s, margin-left 0.3s, margin-top 0.3s, color 0.3s, background-color 0.3s;
+}
+
+
+#S-up-btn:hover {
+	margin-top: 72.2%;
+	width: 40%;
+	font-size: 4em;
+	margin-left: 30%;
+	box-shadow: 0px 0px 20px black;
+	text-shadow: 0px 0px 2px #DEE7EF;
+	color: #DEE7EF;
+	background-color: #5A79A5;
+	-webkit-transition: box-shadow 0.6s, font-size 0.6s, width 0.6s, margin-left 0.6s, margin-top 0.6s, color 0.6s, background-color 0.3s;
+}
+
+#helper {
+	position: absolute;
+	width: 100%;
+	margin-top: 33.3%; /*Was 79% for Sign Up box only*/
+	height: 2px;
+	z-index: 100000;
+}
+
+#helper2 {
+	position: absolute;
+	width: 2px;
+	top: -2.9%;
+	height: 100%;
+	margin-left: 32.5%;
+}
+
+#helper3 {
+	position: absolute;
+	width: 2px;
+	top: -2.9%;
+	height: 100%;
+	margin-left: 67.6%;
+}
+
+/* ----------------------Sign In---------------------- */
+
+#owl {
+	position: absolute;
+	width: 50%;
+	height: auto;
+	margin-top: 64%;
+	left: 0;
+	margin-left: 25%;
+	margin-right: 25%;
+	z-index: 0;
+}
+
+#S-in-btn {
+	position: absolute;
+	font-size: 3em;
+	margin-top: 74%;
+	background-color: white;
+	margin-left: 22.5%;
+	width: 55%;
+	border-radius: 0.2em;
+	box-shadow: 0px 0px 10px #9CAAC6;
+	z-index: 2;
+	-webkit-transition: box-shadow 0.3s, font-size 0.3s, width 0.3s, margin-left 0.3s, margin-top 0.3s, color 0.3s, background-color 0.3s;
+}
+
+
+#S-in-btn:hover {
+	margin-top: 72.2%;
+	width: 60%;
+	font-size: 4em;
+	margin-left: 20%;
+	box-shadow: 0px 0px 20px black;
+	text-shadow: 0px 0px 2px #DEE7EF;
+	color: #DEE7EF;
+	background-color: #5A79A5;
+	-webkit-transition: box-shadow 0.6s, font-size 0.6s, width 0.6s, margin-left 0.6s, margin-top 0.6s, color 0.6s, background-color 0.3s;
+}
+
+#curtain {
+	position: absolute;
+	margin-top: 85%;
+	margin-left: 25%;
+	background-color: #DEE7EF;
+	width: 50%;
+	height: 18%;
+	z-index: 1;
+}
+/* ----------------------EXTRAS---------------------- */
+
+.selected {
+
+}
+
+	/*background-color: #9CAAC6;*/
+	/*background-color: #CE0000;*/
+	/*background-color: #000063;*/
+	/*background-color: #5A79A5;*/
+	/*background-color: #DEE7EF;*/
