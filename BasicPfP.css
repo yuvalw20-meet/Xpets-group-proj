@@ -142,7 +142,7 @@ body {
     -webkit-transition: background-color 0.2s, color 0.2s;
 }
 
-
+/*----------------------------*/
 
 .profile-pos-on-screen {
     width: 40%;
@@ -167,8 +167,8 @@ body {
 }
 #profile-name {
     position: absolute;
-    top: 22%;
-    left: 9%;
+    top: 15%;
+    left: 8%;
     width: 7em;
     font-size: 1em;
     text-align: center;
@@ -222,6 +222,15 @@ body {
     width: 100%;
     height: 50%;
     background-color:#DEE7EF ;
+}
+
+#noPostsYet {
+    position: absolute;
+    text-align: center;
+    left: 4%;
+    top: 30%;
+    font-size: 7em;
+    color: #CE0000;
 }
 
 /*Color Pallete:*/

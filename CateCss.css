@@ -1,0 +1,379 @@
+/*.prev1 {
+	position: absolute;
+	width: 10%;
+	height: 92.7%;
+	background-color: #DEE7EF;
+}
+
+.prev2 {
+	position: absolute;
+	width: 10%;
+	height: 92.7%;
+	left: 10%;
+	background-color: #9CAAC6;
+}
+
+.prev3 {
+	position: absolute;
+	left: 20%;
+	width: 10%;
+	height: 92.7%;
+	background-color: #5A79A5;
+}
+
+.prev4 {
+	position: absolute;
+	left: 30%;
+	width: 10%;
+	height: 92.7%;
+	background-color: #000063;
+}
+
+.prev5 {
+	position: absolute;
+	left: 40%;
+	width: 10%;
+	height: 92.7%;
+	background-color: #CE0000;
+}*/
+
+/* ----------------------NAVIGATION BAR---------------------- */
+
+.nav-bar {
+	overflow: hidden;
+	background-color: #000063;
+	position: sticky;
+	position: -webkit-sticky;
+	height: 5em;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0px 0px 10px black;
+}
+
+.nav-bar h2 {
+	float: left;
+	display: block;
+	color: white;
+	/*text-align: center;*/
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+/* -----------Navigation bar buttons----------- */
+
+/* -----LEFT BUTTON----- */
+
+#left-NB {
+	text-align: center;
+	margin: auto;
+	width: 15%;
+	border-right: 1px solid #000063;
+	padding: 1em;
+	background-color:#9CAAC6;
+	height: 100%;
+	text-shadow: 0px 0px 5px black;
+	font-size: 1.5em;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+#left-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----MIDDLE BUTTON----- */
+
+#center-NB {
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 18.99%;
+	border-left: 1px solid #000063;
+	padding: 1em;
+	height: 100%;
+	background-color: #000063;
+	font-size: 1.5em;
+	color: white;
+	-webkit-transition: color 0.5s, font-size 0.5s, padding-top 2s;
+}
+
+#center-NB:hover {
+	color: #9CAAC6;
+	font-size: 1.9em;
+	padding-top: 20px;
+	-webkit-transition: color 0.2s, font-size 0.4s, padding-top 1s;
+}
+
+/* -----RIGHT BUTTON----- */
+
+#right-NB {
+	position: relative;
+	margin: auto;
+	/*width: 15%;*/
+	/*border: 3px solid #5A9A5;*/
+	padding: 0em;
+	height: 100%;
+	float: right;
+	padding-right: 1.25em;
+	background-color: #000063;
+	box-shadow: inset 0px 0px 20px #000063;
+	text-align: right;
+}
+
+/* This is the making of the three lines for the drop down menu*/
+
+#top-hr, #center-hr, #bot-hr { 
+	position: relative;
+	width: 2em;
+	/*height: 1em;*/
+	top: -0.25em;
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+#center-hr {
+	top: -0.5em;
+}
+
+#bot-hr {
+	top: -0.75em;
+}
+
+.drop-down-bar {
+	overflow: hidden;
+	position: sticky;
+	position: -webkit-sticky;
+	height: 12em;
+	float: right;
+	top: 5em;
+	background-color: #DEE7EF;
+	width: 10em;
+	text-align: center;
+	padding: 6px;
+	z-index: 99;
+	opacity: 0;
+	list-style: none;
+}
+
+.drop-down-bar li {
+	font-size: 1.4em;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	background-color: #DEE7EF;
+	position: relative;
+	top: -3%;
+	width: 110%;
+	left: -5%;
+	vertical-align: middle;
+	color: black;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+.drop-down-bar li:hover {
+	color: white;
+	background-color: #000063;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+}
+
+/* ------------------Categories------------------ */
+
+.dog, .cat, .bir, .fis, .rab {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+}
+
+/* ---------Dog-Section--------- */
+
+.dog {
+	top: 7.3%;
+	background-color: #9CAAC6;
+}
+
+.Dcat1, .Dcat2, .Dcat3, .Ccat1, .Ccat2, .Ccat3, .Bcat1, .Bcat2, .Bcat3, .Fcat1, .Fcat2, .Fcat3, .Rcat1, .Rcat2, .Rcat3 {
+	position: absolute;
+	width: 33.35%;
+	height:80%;
+	bottom: 0;
+	background-blend-mode: luminosity; /*soft-light/screen/luminosity(b&w)*/
+	background-color: inherit;
+	-webkit-transition: background-color 1s;
+}
+
+.Dcat1:hover, .Dcat2:hover, .Dcat3:hover, .Ccat1:hover, .Ccat2:hover, .Ccat3:hover, .Bcat1:hover, .Bcat2:hover, .Bcat3:hover, .Fcat1:hover, .Fcat2:hover, .Fcat3:hover, .Rcat1:hover, .Rcat2:hover, .Rcat3:hover {
+	background-color: initial;
+	-webkit-transition: background-color 1s;
+}
+
+.Dcat1 {
+	background-image: url(https://images4.alphacoders.com/830/thumb-1920-830840.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Dcat2 {
+	left: 33.35%;
+	background-image: url(https://images2.alphacoders.com/657/thumb-1920-657413.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Dcat3 {
+	left: 66.7%;
+	background-image: url(https://images.alphacoders.com/885/thumb-1920-885434.jpg); 
+	background-position: 50% 50%;
+	background-size: 100%;
+	/*background-color: green;	*/
+}
+
+
+body {
+	overflow-x: hidden; 
+}
+
+.cat {
+	top: 47.3%;
+	background-color: #5A79A5;
+}
+
+.Ccat1 {
+	background-image: url(https://images5.alphacoders.com/402/thumb-1920-402346.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Ccat2 {
+	left: 33.35%;
+	background-image: url(https://images.alphacoders.com/847/thumb-1920-847555.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Ccat3 {
+	left: 66.7%;
+	background-image: url(https://images.alphacoders.com/709/thumb-1920-709353.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+	/*background-color: white;*/
+}
+
+.bir {
+	top: 87.3%;
+	background-color: #9CAAC6;
+}
+
+.Bcat1 {
+	background-image: url(https://images7.alphacoders.com/336/thumb-1920-336108.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Bcat2 {
+	left: 33.35%;
+	background-image: url(https://images7.alphacoders.com/439/thumb-1920-439295.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Bcat3 {
+	left: 66.7%;
+	background-image: url(https://images4.alphacoders.com/875/thumb-1920-875850.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+	/*background-color: white;*/
+}
+
+.fis {
+	top: 127.3%;
+	background-color: #5A79A5;
+}
+
+.Fcat1 {
+	background-image: url(https://images8.alphacoders.com/600/thumb-1920-600050.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Fcat2 {
+	left: 33.35%;
+	background-image: url(https://images8.alphacoders.com/464/thumb-1920-464903.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Fcat3 {
+	left: 66.7%;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/Paletten_Doktorfisch_%28Paracanthurus_hepatus%29_01.jpg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.rab {
+	top: 167.3%;
+	background-color: #9CAAC6;
+}
+
+.Rcat1 {
+	background-image: url(https://cdn.fotofits.com/petzlover/gallery/img/l/american-fuzzy-lop-657877.jpeg);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Rcat2 {
+	left: 33.35%;
+	background-image: url(http://2.bp.blogspot.com/-jKbR1rfkIMU/UF5ipwsto1I/AAAAAAAAARk/J_WH7eb2nYQ/s320/CIMG0605.JPG);
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
+.Rcat3 {
+	left: 66.7%;
+	background-image: url(http://2.bp.blogspot.com/-RXqvr44Rmuc/TiVSxdnr7VI/AAAAAAAACXo/nM48HBWwYlo/s1600/P1020868.JPG);
+	background-position: 50% 50%;
+	background-size: 100%;
+	/*background-color: white;*/
+}
+
+#title {
+	width: 100%;
+	text-align: center;
+	/*background-color: red;*/
+	z-index: 2;
+	font-size: 4em;
+	vertical-align: middle;
+	color: #DEE7EF;
+}
+
+#Des {
+	position: absolute;
+	color: #DEE7EF;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	bottom: 0;
+}
+
+.WrkNPrgrs {
+	position: fixed;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	z-index: 98;
+}
+
+#Wrning {
+	position: absolute;
+	color: rgba(0,0,0,0.5);
+	font-size: 5em;
+	top: 40%;
+	background-color: rgba(256,256,256,0.8);
+	width: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0); 
+}

@@ -146,12 +146,15 @@
 	-webkit-transition: background-color 0.2s, color 0.2s;
 }
 
-body {
+.body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
+    background-color: #5A79A5;
 }
 
 /* ----------------------M P P---------------------- */
+
+/* ----------------------Containers---------------------- */
 
 .MPP, .Rec-Ado {
 	position: absolute;
@@ -159,17 +162,20 @@ body {
   	left: 50%;
   	width: 100%;
   	height: 40%;
-  	background-color: black;
   	/*box-shadow: 0px 0px 10px gray;*/
 }
 
 .MPP {
-	top: 10em;
+  	/*background-color: #DEE7EF;*/
+	top: 10%;
 }
 
 .Rec-Ado {
-	top: 35em;
+  	/*background-color: #5A79A5;*/
+	top: 57%;
 }
+
+/* ----------------------Title---------------------- */
 
 .title, .Rtitle {
 	position: absolute;
@@ -186,47 +192,68 @@ body {
 	/*padding-top: 1em;*/
 }
 
+/* ----------------------Pictures---------------------- */
+
 
 .slot1, .slot2, .slot3, .slot4, .slot5, .Rslot1, .Rslot2, .Rslot3, .Rslot4, .Rslot5 {
 	position: relative;
+	left: 1em;
 	display: inline-block;
 	margin-top: 3.11em;
-	width:19.81326%;
+	width: 19.6vw;
 	height: 86.8%;
+	opacity: 0.5;
 	background-color: blue;
 	box-shadow: 0px 0px 10px gray;
+	-webkit-transition: opacity 0.6s, background-size 1s;
 }
+
+.slot1:hover, .slot2:hover, .slot3:hover, .slot4:hover, .slot5:hover, .Rslot1:hover, .Rslot2:hover, .Rslot3:hover, .Rslot4:hover, .Rslot5:hover {
+	opacity: 1;
+	background-size: 50em;
+	-webkit-transition: opacity 0.6s, background-size 2s;
+}
+
 
 .slot1 {
 	background-image: url(https://vetstreet.brightspotcdn.com/dims4/default/4c1fd66/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Ffd%2Fc6caa0a81811e0a0d50050568d634f%2Ffile%2Fsamoyed-1-645mk070111.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	background-size: 160%;
 }
 
 .slot2 {
 	background-image: url(http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-3.jpg);
 	background-repeat: no-repeat;
 	background-position: 40% 10%;	
+	background-size: 170%;
 }
 
 .slot3 {
 	background-image: url(https://www.petguide.com/wp-content/uploads/2016/08/satin-rabbit-1.jpg);
 	background-repeat: no-repeat;
 	background-position: 40% 20%;	
+	background-size: 150%;
 }
 
 .slot4 {
-	background-image: url(https://i.redd.it/yaekdlw1qa6z.jpg);
+	background-image: url(http://yesofcorsa.com/wp-content/uploads/2015/10/1143_rabbit.jpg);
 	background-repeat: no-repeat;
-	background-size: 140%;
-	background-position: 40% 50%;	
+	background-size: 170%;
+	background-position: 40% 50%;
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;	
+}
+
+.slot4:hover {
+	background-position: 40% 40%;
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;
 }
 
 .slot5 {
-	background-image: url(https://cdn.shopify.com/s/files/1/0855/3388/products/6297_800x.jpeg?v=1441108913);
+	background-image: url(https://images.alphacoders.com/276/thumb-1920-276793.jpg);
 	background-repeat: no-repeat;
-	background-size: 150%;
-	background-position: 100% 10%;	
+	background-size: 170%;
+	background-position: 80% 80%;	
 }
 
 
@@ -246,21 +273,27 @@ body {
 	background-image: url(https://images4.alphacoders.com/712/thumb-1920-712249.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: 131%;
+	background-size: 150%;
 }
 
 .Rslot2 {
 	background-image: url(https://images4.alphacoders.com/592/thumb-1920-592456.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% -0%;
-	background-size: 125%;
+	background-size: 138%;
 }
 
 .Rslot3 {
 	background-image: url(http://chandra.as.utexas.edu/canarybirds/AfricanBlueTit-7D3538w.jpg);
 	background-repeat: no-repeat;
 	background-position: 60% 20%;
-	background-size: 130%;
+	background-size: 140%;
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;
+}
+
+.Rslot3:hover {
+	background-position: 100% 20%;
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;
 }
 
 .Rslot4 {
@@ -268,13 +301,30 @@ body {
 	background-repeat: no-repeat;
 	background-size: 140%;
 	background-position: 40% 50%;	
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;
+}
+
+.Rslot4:hover {
+	background-position: 60% 90%;
+	-webkit-transition: opacity 0.6s, background-size 1s, background-position 1s;
 }
 
 .Rslot5 {
 	background-image: url(https://images.alphacoders.com/460/thumb-1920-460101.jpg);
 	background-repeat: no-repeat;
-	background-size: 140%;
+	background-size: 150%;
 	background-position: 50% 50%;	
+}
+
+/* ---------------Seperator--------------- */
+
+#sep {
+	position: absolute;
+	top: 55%;
+	width: 100%;
+	height: 0.001%;
+	color: white;
+	border-radius: 100%;
 }
 
 /* ----------------------EXTRAS---------------------- */
